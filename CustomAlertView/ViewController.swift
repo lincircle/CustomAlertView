@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = view.bounds
         
-        alert_view = AlertView(frame: CGRect(x: self.view.frame.width / 4, y: self.view.frame.height / 4, width: self.view.frame.width / 2, height: self.view.frame.height / 2), alertText: "test", button_count: .TWO, button_text: ["ok","cancel"], action_name: ["ok","cancel"], target: self)
+        alert_view = AlertView(frame: CGRect(x: self.view.frame.width / 4 - 20, y: self.view.frame.height / 3, width: self.view.frame.width / 2 + 40, height: self.view.frame.height / 2), alertText: "test hello , lin", button_count: .TWO, button_text: ["ok","cancel"], action_name: ["ok","cancel"], target: self)
         
         self.view.addSubview(blurEffectView)
         self.view.addSubview(alert_view)
